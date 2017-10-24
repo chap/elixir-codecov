@@ -5,5 +5,9 @@ defmodule ExampleTest do
   test "add" do
     assert Example.add(1, 1) == 2
   end
+  
+  test "subtract" do
+    assert Example.subtract(3, 1) == 2
+  end
 
 end
