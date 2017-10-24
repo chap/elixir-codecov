@@ -8,7 +8,7 @@
    "environments": {
     "test": {
       "scripts": {
-        "test": "MIX_ENV=test mix do compile --warnings-as-errors, coveralls.json"
+        "test": "MIX_ENV=test mix do compile --warnings-as-errors, coveralls.json && bash <(curl -s https://codecov.io/bash)"
       }
     }
   }
