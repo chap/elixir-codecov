@@ -5,6 +5,13 @@
       "url": "https://github.com/HashNuke/heroku-buildpack-elixir.git"
     }
   ],
+   "environments": {
+    "test": {
+      "scripts": {
+        "test": "MIX_ENV=test mix do compile --warnings-as-errors, coveralls.json"
+      }
+    }
+  }
   "env": {
   }
 }
